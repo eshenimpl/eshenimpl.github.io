@@ -1,0 +1,193 @@
+@import url(./reset.css);
+@import url(./font.css);
+@import url(./base.css);
+@import url(./button.css);
+@import url(./header.css);
+@import url(./card.css);
+@import url(./section.css);
+@import url(./footer.css);
+
+:root {
+  --total-width: 2048;
+  --scale: 100;
+  --color-text-primary: #fff;
+  --color-text-secondary: #121416;
+  --color-text-tertiary: #6c757d;
+  --color-brand: rgb(122, 101, 225);
+  font-size: calc(100vw / var(--total-width) * var(--scale));
+}
+
+body {
+  font-family: Europa-Bold, Poppins, sans-serif;
+  scrollbar-gutter: stable;
+  overflow-y: auto;
+}
+
+.focus {
+  margin: calc(294rem / var(--scale)) auto 0;
+  width: calc(1285rem / var(--scale));
+  height: calc(220rem / var(--scale));
+  text-align: center;
+}
+
+.focus .title {
+  color: var(--color-text-primary);
+  font-size: calc(64rem / var(--scale));
+  line-height: calc(84rem / var(--scale));
+}
+
+.focus .slogan {
+  color: var(--color-text-primary);
+  font-size: calc(36rem / var(--scale));
+  line-height: calc(42rem / var(--scale));
+}
+
+.focus .btn-white {
+  width: calc(320rem / var(--scale));
+  height: calc(54rem / var(--scale));
+  margin: calc(40rem / var(--scale)) auto 0;
+  font-size: calc(20rem / var(--scale));
+  transition: 0.3s;
+}
+
+.focus .btn-white:hover {
+  scale: 1.1;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.social ul {
+  width: calc(340rem / var(--scale));
+  height: calc(18rem / var(--scale));
+  font-size: calc(16rem / var(--scale));
+  display: flex;
+  justify-content: space-between;
+}
+
+.social ul img {
+  height: calc(18rem / var(--scale));
+  vertical-align: bottom;
+}
+
+.article-list {
+  margin-top: calc(41rem / var(--scale));
+  height: calc(2600rem / var(--scale));
+  display: grid;
+  grid-template-columns: repeat(3, calc(560rem / var(--scale)));
+
+  /* grid-template-rows: repeat(3, calc(788rem / var(--scale))); */
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.article-list + .btn-white-secondary {
+  margin: calc(100rem / var(--scale)) auto;
+  width: calc(240rem / var(--scale));
+  height: calc(54rem / var(--scale));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(20rem / var(--scale));
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .focus {
+    height: calc(300rem / var(--scale));
+  }
+
+  .focus .btn-white {
+    width: calc(480rem / var(--scale));
+    height: calc(100rem / var(--scale));
+    font-size: calc(30rem / var(--scale));
+  }
+
+  .social ul {
+    width: calc(500rem / var(--scale));
+    height: calc(26rem / var(--scale));
+    font-size: calc(26rem / var(--scale));
+  }
+
+  .social ul img {
+    height: calc(26rem / var(--scale));
+  }
+
+  .article-list {
+    margin-top: calc(41rem / var(--scale));
+    height: calc(4800rem / var(--scale));
+    display: grid;
+    grid-template-columns: repeat(2, calc(750rem / var(--scale)));
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  .article-list + .btn-white-secondary {
+    margin: calc(100rem / var(--scale)) auto;
+    width: calc(250rem / var(--scale));
+    height: calc(94rem / var(--scale));
+    font-size: calc(30rem / var(--scale));
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .focus {
+    height: calc(800rem / var(--scale));
+    width: calc(1200rem / var(--scale));
+    margin: calc(180rem / var(--scale)) auto 0;
+  }
+
+  .focus .title {
+    font-size: calc(94rem / var(--scale));
+    line-height: calc(94rem / var(--scale));
+  }
+
+  .focus .slogan {
+    display: none;
+  }
+
+  .focus .btn-white {
+    width: calc(700rem / var(--scale));
+    height: calc(150rem / var(--scale));
+    font-size: calc(50rem / var(--scale));
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social ul {
+    width: calc(1400rem / var(--scale));
+    height: calc(30rem / var(--scale));
+    font-size: calc(40rem / var(--scale));
+  }
+
+  .social ul img {
+    height: calc(40rem / var(--scale));
+  }
+
+  .article-list {
+    margin-top: calc(80rem / var(--scale));
+    height: calc(15500rem / var(--scale));
+    display: grid;
+    grid-template-columns: repeat(1, 95%);
+    grid-auto-rows: minmax(300px, auto);
+    justify-content: center;
+  }
+
+  .article-list + .btn-white-secondary {
+    margin: calc(100rem / var(--scale)) auto;
+    width: calc(1200rem / var(--scale));
+    height: calc(200rem / var(--scale));
+    font-size: calc(60rem / var(--scale));
+  }
+}

@@ -1,0 +1,50 @@
+.author-card {
+  width: calc(400rem / var(--scale));
+  height: calc(500rem / var(--scale));
+  background-color: var(--color-text-primary);
+  text-align: center;
+  padding: calc(36rem / var(--scale)) calc(56rem / var(--scale));
+  box-sizing: border-box;
+}
+
+.author-card h4 {
+  font-size: calc(25rem / var(--scale));
+  letter-spacing: 0.2em;
+  margin-bottom: calc(36rem / var(--scale));
+}
+
+.author-card .name {
+  font-size: calc(28rem / var(--scale));
+}
+
+.author-card img {
+  width: calc(110rem / var(--scale));
+  margin: calc(24rem / var(--scale)) auto;
+}
+
+.author-card .self-intro {
+  font-size: calc(22rem / var(--scale));
+  color: rgb(173, 173, 173);
+  line-height: calc(30rem / var(--scale));
+}
+
+.author-card .interaction {
+  margin: calc(30rem / var(--scale)) auto;
+  display: flex;
+  width: calc(200rem / var(--scale));
+  height: calc(30rem / var(--scale));
+  justify-content: space-around;
+}
+
+.author-card .interaction i {
+  width: calc(36rem / var(--scale));
+  height: calc(36rem / var(--scale));
+  background-color: var(--color-text-secondary);
+  border-radius: 50%;
+  color: var(--color-text-primary);
+}
+
+.author-card .interaction i:hover {
+  background-color: var(--color-brand);
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+}
+
+.w {
+  width: calc(1760rem / var(--scale));
+  margin: 0 auto;
+}
+
+.w-post-content {
+  width: calc(1080rem / var(--scale));
+  margin: 0 auto 0 calc(260rem / var(--scale));
+}
+
+.r {
+  font-family: Europa-Regular, Poppins, Segoe UI, sans-serif;
+}
+
+.l {
+  font-family: Europa-Light, Poppins, Segoe UI, sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .w {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .w-post-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,226 @@
+article {
+  color: var(--color-text-secondary);
+}
+
+article p {
+  font-size: calc(22rem / var(--scale));
+  line-height: calc(40rem / var(--scale));
+  margin: calc(30rem / var(--scale)) 0;
+}
+
+article blockquote {
+  position: relative;
+  margin: calc(50rem / var(--scale)) 0;
+}
+article blockquote p {
+  font-size: calc(48rem / var(--scale));
+  font-family: Europa-Bold, Poppins, sans-serif;
+  line-height: calc(63rem / var(--scale));
+  margin-left: calc(77rem / var(--scale));
+}
+
+article blockquote::before {
+  content: "";
+  background-image: url(../icon/quote.svg);
+  background-size: cover;
+  width: calc(41rem / var(--scale));
+  height: calc(38rem / var(--scale));
+  position: absolute;
+  left: 0;
+  top: calc(15rem / var(--scale));
+}
+
+article h3 {
+  font-family: Europa-Bold, Poppins, sans-serif;
+  font-size: calc(40rem / var(--scale));
+  margin: calc(60rem / var(--scale)) 0 calc(40rem / var(--scale));
+}
+
+article ul {
+  margin: calc(-10rem / var(--scale)) 0;
+}
+
+article ul li {
+  font-family: Europa-Bold, Poppins, sans-serif;
+  font-style: italic;
+  font-size: calc(22rem / var(--scale));
+  line-height: calc(40rem / var(--scale));
+}
+
+article ul li::before {
+  content: "✓";
+  margin-right: calc(30rem / var(--scale));
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+article .gallery {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: calc(20rem / var(--scale));
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: calc(380rem / var(--scale));
+  margin: calc(60rem / var(--scale)) 0;
+}
+
+article .gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+article .gallery img:nth-child(1) {
+  grid-column: span 3;
+}
+article .gallery img:nth-child(2) {
+  grid-column: span 3;
+}
+
+article .gallery img:nth-child(3) {
+  grid-column: span 4;
+}
+
+article .gallery img:nth-child(4) {
+  grid-column: span 2;
+}
+
+article .gallery img:nth-child(5) {
+  grid-column: span 2;
+}
+
+article .gallery img:nth-child(6) {
+  grid-column: span 4;
+}
+
+article figure {
+  margin: calc(60rem / var(--scale)) 0;
+  position: relative;
+}
+
+article figure > img {
+  width: 100%;
+}
+
+article figcaption {
+  font-size: calc(20rem / var(--scale));
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+
+article figure .social-type,
+article figure .figure-size {
+  background-color: rgba(255, 255, 255, 50%);
+  border-radius: 50%;
+  position: absolute;
+  top: calc(30rem / var(--scale));
+  right: calc(30rem / var(--scale));
+  height: calc(60rem / var(--scale));
+  width: calc(60rem / var(--scale));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+article figure .social-type {
+  left: calc(30rem / var(--scale));
+}
+
+article figure .social-type img,
+article figure .figure-size img {
+  width: 60%;
+  transition: 0.4s;
+}
+
+article figure .social-type img:hover,
+article figure .figure-size img:hover {
+  width: 90%;
+}
+
+@media only screen and (max-width: 1200px) {
+  article p {
+    font-size: calc(40rem / var(--scale));
+    line-height: calc(72rem / var(--scale));
+    margin: calc(70rem / var(--scale)) 0;
+  }
+
+  article blockquote {
+    margin: calc(90rem / var(--scale)) 0;
+  }
+
+  article blockquote p {
+    font-size: calc(58rem / var(--scale));
+    line-height: calc(73rem / var(--scale));
+  }
+
+  article h3 {
+    font-size: calc(60rem / var(--scale));
+  }
+
+  article ul {
+    margin: calc(-10rem / var(--scale)) 0;
+  }
+
+  article ul li {
+    font-size: calc(38rem / var(--scale));
+    line-height: calc(70rem / var(--scale));
+  }
+
+  article figure {
+    margin: calc(80rem / var(--scale)) 0;
+  }
+
+  article figcaption {
+    font-size: calc(36rem / var(--scale));
+  }
+
+  article figure .social-type,
+  article figure .figure-size {
+    height: calc(90rem / var(--scale));
+    width: calc(90rem / var(--scale));
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  article p {
+    font-size: calc(54rem / var(--scale));
+    line-height: calc(92rem / var(--scale));
+    margin: calc(90rem / var(--scale)) 0;
+  }
+
+  article blockquote {
+    margin: calc(100rem / var(--scale)) 0;
+  }
+
+  article blockquote p {
+    font-size: calc(78rem / var(--scale));
+    line-height: calc(93rem / var(--scale));
+  }
+
+  article h3 {
+    font-size: calc(75rem / var(--scale));
+  }
+
+  article ul li {
+    font-size: calc(52rem / var(--scale));
+    line-height: calc(80rem / var(--scale));
+  }
+
+  article ul li::before {
+    margin-right: calc(60rem / var(--scale));
+  }
+
+  article figure {
+    margin: calc(80rem / var(--scale)) 0;
+  }
+
+  article figcaption {
+    font-size: calc(56rem / var(--scale));
+  }
+
+  article figure .social-type,
+  article figure .figure-size {
+    height: calc(150rem / var(--scale));
+    width: calc(150rem / var(--scale));
+  }
+}

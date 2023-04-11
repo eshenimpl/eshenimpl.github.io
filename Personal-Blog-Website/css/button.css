@@ -1,0 +1,77 @@
+.btn-black {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  letter-spacing: 1px;
+  color: var(--color-text-primary);
+  background-color: var(--color-text-secondary);
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-black:hover {
+  background-color: var(--color-brand);
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-text-primary);
+  border-radius: 3px;
+  color: var(--color-text-secondary);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Europa-Bold;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-black-secondary {
+  background-color: rgba(52, 58, 64);
+  border-radius: 3px;
+  color: var(--color-text-primary);
+  font-family: Europa-Bold;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-black-secondary:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-text-primary);
+  border-radius: 3px;
+  color: var(--color-text-secondary);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Europa-Bold;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-white:hover {
+  background-color: var(--color-brand);
+  color: var(--color-text-primary);
+}
+
+.btn-white-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-text-primary);
+  border-radius: 3px;
+  color: var(--color-text-tertiary);
+  font-family: Europa-Bold;
+  cursor: pointer;
+  border: 1px var(--color-text-tertiary) solid;
+}
+
+.btn-white-secondary:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+}

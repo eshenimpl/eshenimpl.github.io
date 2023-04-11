@@ -1,0 +1,57 @@
+footer {
+  margin-top: calc(160rem / var(--scale));
+  height: calc(216rem / var(--scale));
+  background-color: var(--color-text-secondary);
+  position: relative;
+}
+
+footer .copyright {
+  position: absolute;
+  top: calc(95rem / var(--scale));
+  left: calc(124rem / var(--scale));
+  color: var(--color-text-primary);
+  font-size: calc(26rem / var(--scale));
+}
+
+footer .copyright span {
+  font-family: Europa-Bold, Poppins, Segoe UI, sans-serif;
+}
+
+footer .home {
+  display: flex;
+  width: calc(44rem / var(--scale));
+  height: calc(44rem / var(--scale));
+  background-color: rgba(160, 160, 160);
+  color: var(--color-text-primary);
+  position: absolute;
+  top: calc(88rem / var(--scale));
+  right: calc(124rem / var(--scale));
+  font-size: calc(25rem / var(--scale));
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer .copyright {
+    font-size: calc(40rem / var(--scale));
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20%);
+  }
+
+  footer .home {
+    width: calc(60rem / var(--scale));
+    height: calc(60rem / var(--scale));
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  footer .copyright {
+    font-size: calc(55rem / var(--scale));
+  }
+
+  footer .home {
+    width: calc(100rem / var(--scale));
+    height: calc(80rem / var(--scale));
+  }
+}

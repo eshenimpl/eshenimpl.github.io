@@ -1,0 +1,211 @@
+.subscription {
+  height: calc(561rem / var(--scale));
+  background: url(../img/subscription.png) center center/cover;
+  color: var(--color-text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription form {
+  height: calc(257rem / var(--scale));
+  width: calc(900rem / var(--scale));
+}
+
+.subscription h3 {
+  font-size: calc(40rem / var(--scale));
+  margin-bottom: calc(20rem / var(--scale));
+}
+
+.subscription p {
+  font-size: calc(22rem / var(--scale));
+}
+
+.subscription .user-input {
+  position: relative;
+  margin-top: calc(-20rem / var(--scale));
+  margin-bottom: calc(30rem / var(--scale));
+}
+
+.subscription input[type="email"] {
+  width: 100%;
+  height: calc(70rem / var(--scale));
+  border: none;
+  border-radius: calc(4rem / var(--scale));
+  padding: calc(4rem / var(--scale)) calc(15rem / var(--scale));
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Europa-Bold, Poppins, Segoe UI, sans-serif;
+  font-size: calc(22rem / var(--scale));
+}
+
+.subscription input[type="email"]:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(122, 101, 225, 0.5);
+}
+
+.subscription input::placeholder {
+  opacity: 0.5;
+  font-family: Europa-Bold, Poppins, Segoe UI, sans-serif;
+  font-size: calc(22rem / var(--scale));
+  color: var(--color-text-tertiary);
+}
+
+.subscription button {
+  position: absolute;
+  right: calc(16rem / var(--scale));
+  top: calc(54rem / var(--scale));
+  padding: calc(10rem / var(--scale)) calc(20rem / var(--scale));
+  border-color: rgba(203, 205, 207);
+  font-size: calc(22rem / var(--scale));
+}
+
+.subscription .checkbox-control {
+  font-size: calc(16rem / var(--scale));
+  position: relative;
+  display: block;
+  left: calc(30rem / var(--scale));
+  line-height: calc(20rem / var(--scale));
+  width: 90%;
+}
+
+.subscription .checkbox-control:hover {
+  text-decoration: underline;
+}
+
+.subscription input[type="checkbox"] {
+  border: 0.15em;
+  appearance: none;
+  cursor: pointer;
+  background: rgba(40, 40, 40, 0.2);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  position: absolute;
+  left: calc(-30rem / var(--scale));
+}
+
+.subscription input[type="checkbox"]::before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+}
+
+.subscription input[type="checkbox"]:checked::before {
+  content: "✓";
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+  .subscription {
+    height: calc(561rem / var(--scale));
+  }
+
+  .subscription form {
+    margin-top: calc(10rem / var(--scale));
+    /* height: 80%; */
+    width: 80%;
+  }
+
+  .subscription h3 {
+    font-size: calc(50rem / var(--scale));
+    margin-bottom: calc(20rem / var(--scale));
+  }
+
+  .subscription p {
+    font-size: calc(32rem / var(--scale));
+  }
+
+  .subscription .user-input {
+    position: relative;
+    margin-top: calc(-20rem / var(--scale));
+    margin-bottom: calc(30rem / var(--scale));
+  }
+
+  .subscription input[type="email"] {
+    width: 100%;
+    height: calc(80rem / var(--scale));
+    padding: calc(4rem / var(--scale)) calc(15rem / var(--scale));
+
+    font-size: calc(32rem / var(--scale));
+  }
+
+  .subscription input::placeholder {
+    font-size: calc(32rem / var(--scale));
+  }
+
+  .subscription button {
+    right: calc(16rem / var(--scale));
+    top: calc(42rem / var(--scale));
+    font-size: calc(30rem / var(--scale));
+  }
+
+  .subscription .checkbox-control {
+    font-size: calc(22rem / var(--scale));
+    left: calc(50rem / var(--scale));
+    line-height: calc(30rem / var(--scale));
+  }
+
+  .subscription input[type="checkbox"] {
+    left: calc(-50rem / var(--scale));
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .subscription {
+    height: calc(861rem / var(--scale));
+  }
+
+  .subscription form {
+    margin-top: calc(120rem / var(--scale));
+    height: 90%;
+    width: 80%;
+  }
+
+  .subscription h3 {
+    font-size: calc(100rem / var(--scale));
+    margin-bottom: calc(30rem / var(--scale));
+  }
+
+  .subscription p {
+    font-size: calc(52rem / var(--scale));
+  }
+
+  .subscription .user-input {
+    margin-top: calc(50rem / var(--scale));
+    margin-bottom: calc(50rem / var(--scale));
+  }
+
+  .subscription input[type="email"] {
+    width: 100%;
+    height: calc(140rem / var(--scale));
+    padding: calc(10rem / var(--scale)) calc(10rem / var(--scale));
+
+    font-size: calc(52rem / var(--scale));
+  }
+
+  .subscription input::placeholder {
+    font-size: calc(52rem / var(--scale));
+  }
+
+  .subscription button {
+    right: calc(16rem / var(--scale));
+    top: calc(22rem / var(--scale));
+    font-size: calc(50rem / var(--scale));
+  }
+
+  .subscription .checkbox-control {
+    font-size: calc(42rem / var(--scale));
+    left: calc(70rem / var(--scale));
+    line-height: calc(50rem / var(--scale));
+  }
+
+  .subscription input[type="checkbox"] {
+    left: calc(-70rem / var(--scale));
+  }
+}

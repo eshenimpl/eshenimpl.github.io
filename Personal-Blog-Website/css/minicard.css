@@ -1,0 +1,63 @@
+.latest-rec {
+  width: calc(400rem / var(--scale));
+  height: calc(500rem / var(--scale));
+  margin-top: calc(100rem / var(--scale));
+}
+
+.latest-rec h4 {
+  font-size: calc(32rem / var(--scale));
+  margin-bottom: calc(30rem / var(--scale));
+}
+
+.latest-rec {
+  font-size: calc(22rem / var(--scale));
+}
+
+.latest-article-list {
+  display: flex;
+  flex-direction: column;
+  height: calc(900rem / var(--scale));
+  justify-content: space-around;
+}
+
+.latest-rec .mini-card {
+  height: calc(170rem / var(--scale));
+  padding: calc(30rem / var(--scale)) calc(25rem / var(--scale)) 0
+    calc(25rem / var(--scale));
+  line-height: calc(28rem / var(--scale));
+  background-color: var(--color-text-primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.latest-rec .mini-card:hover {
+  transform: translateX(-5px);
+  box-shadow: 5px 5px 10px rgba(122, 101, 225, 0.3);
+}
+
+.latest-rec .mini-card:first-child {
+  background: url(../img/latest.png) no-repeat center center/cover;
+  color: var(--color-text-primary);
+}
+
+.latest-rec .mini-card .attribute {
+  width: calc(300rem / var(--scale));
+  display: flex;
+  justify-content: space-between;
+  margin: calc(25rem / var(--scale)) 0;
+}
+
+.latest-rec .mini-card .date,
+.latest-rec .mini-card span {
+  color: rgba(65, 65, 65);
+  font-size: calc(18rem / var(--scale));
+}
+
+.latest-rec .mini-card:first-child .date,
+.latest-rec .mini-card:first-child span {
+  color: rgba(208, 208, 208);
+}
+
+.latest-rec .mini-card .date {
+  margin: 1px;
+}

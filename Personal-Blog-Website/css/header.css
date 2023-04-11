@@ -1,0 +1,129 @@
+.top-banner {
+  width: 100%;
+  height: calc(900rem / var(--scale));
+  background-image: linear-gradient(rgba(0, 0, 0, 39%), rgba(0, 0, 0, 39%)),
+    url(../img/Rectangle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: calc(41rem / var(--scale));
+}
+
+div.top-bar {
+  height: calc(54rem / var(--scale));
+  line-height: calc(54rem / var(--scale));
+  margin-top: calc(43rem / var(--scale));
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  display: inline-block;
+}
+
+.logo > img {
+  width: calc(216rem / var(--scale));
+  margin-bottom: calc(10rem / var(--scale));
+}
+
+.logo a img {
+  width: calc(150rem / var(--scale));
+  margin-bottom: calc(23rem / var(--scale));
+  margin-left: calc(-20rem / var(--scale));
+}
+
+.nav-bar {
+  width: calc(682rem / var(--scale));
+}
+
+.nav-bar > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar a {
+  color: var(--color-text-primary);
+  font-size: calc(20rem / var(--scale));
+  display: block;
+  transition: 0.2s;
+}
+
+.nav-bar a:hover {
+  transform: scale(1.2);
+}
+
+.user-section {
+  width: calc(400rem / var(--scale));
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-section .search {
+  color: var(--color-text-primary);
+  font-size: calc(30rem / var(--scale));
+  align-items: center;
+  transition: 0.2s;
+}
+
+.user-section .search:hover {
+  transform: scale(1.2);
+}
+
+.user-section .btn-black {
+  font-family: Sansita;
+  font-size: calc(18rem / var(--scale));
+  width: calc(340rem / var(--scale));
+}
+
+.user-section .btn-black span {
+  font-size: calc(22rem / var(--scale));
+}
+
+@media only screen and (max-width: 1200px) {
+  div.top-bar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-bar {
+    width: 70%;
+  }
+
+  .nav-bar a {
+    font-size: calc(30rem / var(--scale));
+  }
+  .user-section {
+    width: calc(50rem / var(--scale));
+    display: flex;
+    justify-items: end;
+  }
+
+  .user-section .btn-black {
+    display: none;
+  }
+
+  .logo > img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .logo a img {
+    width: calc(400rem / var(--scale));
+    /* margin-left: calc(-100rem / var(--scale)); */
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .user-section .search {
+    font-size: calc(80rem / var(--scale));
+    margin-top: calc(10rem / var(--scale));
+  }
+
+  div.top-bar {
+    margin-top: calc(100rem / var(--scale));
+    display: flex;
+    justify-content: space-between;
+  }
+}

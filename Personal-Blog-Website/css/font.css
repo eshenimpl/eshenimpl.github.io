@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Europa-Bold";
+  src: url("../font/Europa-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Europa-Regular";
+  src: url("../font/EuropaNuovaRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sansita";
+  src: url("../font/Sansita-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Europa-Light";
+  src: url("../font/europa-light-webfont.ttf") format("truetype");
+}

@@ -1,0 +1,58 @@
+.destination-rec h3 {
+  font-size: calc(32rem / var(--scale));
+  margin-bottom: calc(16rem / var(--scale));
+}
+
+.destination-rec p {
+  font-size: calc(20rem / var(--scale));
+}
+
+.destination-list {
+  margin-top: calc(30rem / var(--scale));
+  display: flex;
+  justify-content: space-between;
+}
+
+.destination-list a {
+  width: calc(320rem / var(--scale));
+  height: calc(260rem / var(--scale));
+  position: relative;
+  overflow: hidden;
+}
+
+.destination-list h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto;
+  font-size: calc(24rem / var(--scale));
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.destination-list img {
+  width: 100%;
+  vertical-align: bottom;
+  transition: 0.4s;
+}
+
+.destination-list a:hover img {
+  transform: scale(1.2);
+}
+
+.destination-list .shade {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 20%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .destination-rec {
+    display: none;
+  }
+}

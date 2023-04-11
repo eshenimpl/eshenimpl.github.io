@@ -1,0 +1,76 @@
+.interest-rec {
+  margin-top: calc(120rem / var(--scale));
+}
+
+.interest-rec h3 {
+  font-size: calc(36rem / var(--scale));
+  margin: calc(60rem / var(--scale)) 0 calc(40rem / var(--scale));
+}
+
+.interest-rec .post-card-list {
+  height: calc(960rem / var(--scale));
+  display: grid;
+  grid-template-columns: repeat(3, calc(330rem / var(--scale)));
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.interest-rec .post-card {
+  position: relative;
+}
+
+.interest-rec .post-card img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.interest-rec .shade {
+  width: 100%;
+  height: calc(248rem / var(--scale));
+  background: rgba(0, 0, 0, 20%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.interest-rec .post-card:hover .shade {
+  display: none;
+}
+
+.interest-rec .post-content {
+  height: calc(210rem / var(--scale));
+  border: transparent 1px solid;
+}
+
+.interest-rec .post-content h4 {
+  font-size: calc(32rem / var(--scale));
+  line-height: 1.2em;
+  color: var(--color-text-secondary);
+  margin: calc(20rem / var(--scale)) 0;
+}
+
+.interest-rec .post-content > p {
+  color: var(--color-text-tertiary);
+  font-size: calc(22rem / var(--scale));
+  line-height: 1em;
+}
+
+.interest-rec .post-card .attribute {
+  width: 100%;
+  display: flex;
+  margin-top: calc(25rem / var(--scale));
+  color: var(--color-text-secondary);
+  opacity: 80%;
+  font-size: calc(18rem / var(--scale));
+}
+
+.interest-rec .post-card .date {
+  margin-top: 1px;
+  margin-right: calc(20rem / var(--scale));
+}
+
+@media only screen and (max-width: 1200px) {
+  .interest-rec {
+    display: none;
+  }
+}
